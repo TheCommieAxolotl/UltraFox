@@ -1,0 +1,100 @@
+:root {
+    --background-primary: #101014;
+    --background-secondary: #17161b;
+    --background-secondary-alt: #17161b;
+    --background-tertiary: #101014;
+    --background-accent: #4f545c;
+    --background-floating: #17161b;
+    --accent: #6e6af6;
+    --arrowpanel-background: var(--background-primary) !important;
+    --arrowpanel-border-color: transparent !important;
+    --font: "Lato";
+    --panel-separator-color: var(--background-secondary) !important;
+    --zoom-controls-bgcolor: var(--background-secondary) !important;
+    --panel-separator-zap-gradient: linear-gradient(
+        90deg,
+        #ff59cd 0%,
+        #d54aff 52.08%,
+        #6f4fff 100%
+    ) !important;
+}
+
+#navigator-toolbox {
+    background-color: var(--background-primary) !important;
+}
+
+#nav-bar {
+    background: var(--background-secondary) !important;
+    box-shadow: none !important;
+}
+
+#titlebar {
+    padding: 10px 0;
+}
+
+* {
+    font-family: var(--font);
+}
+
+.tab-background[selected="true"] {
+    background: var(--background-secondary) !important;
+}
+
+#urlbar-background {
+    border-color: transparent !important;
+    transition: background-color 0.1s ease-in-out;
+    transition: max-height 0.4s ease-in;
+    background-color: var(--background-primary) !important;
+}
+#urlbar:is([focused="true"], [open]) > #urlbar-background,
+#searchbar:focus-within {
+    background-color: var(--background-floating) !important;
+    border-radius: 8px !important;
+    transition: max-height 0.4s ease-in;
+}
+
+* {
+    --toolbarbutton-icon-fill-attention: var(--accent) !important;
+    --focus-outline-color: var(--accent) !important;
+    --tab-loading-fill: var(--accent) !important;
+    --lwt-accent-color: var(--toolbar-bgcolor) !important;
+    --lwt-selected-tab-background-color: color-mix(
+        in srgb,
+        var(--accent) 75%,
+        transparent
+    ) !important;
+    --tab-line-color: transparent !important;
+    --button-color: var(--accent) !important;
+    --button-bgcolor: color-mix(
+        in srgb,
+        var(--accent) 13%,
+        transparent
+    ) !important;
+    --button-hover-bgcolor: color-mix(
+        in srgb,
+        var(--accent) 17%,
+        transparent
+    ) !important;
+    --button-active-bgcolor: color-mix(
+        in srgb,
+        var(--accent) 30%,
+        transparent
+    ) !important;
+    --button-primary-bgcolor: var(--accent) !important;
+    --button-primary-hover-bgcolor: color-mix(
+        in srgb,
+        black 10%,
+        var(--accent)
+    ) !important;
+    --button-primary-active-bgcolor: color-mix(
+        in srgb,
+        black 20%,
+        var(--accent)
+    ) !important;
+    --button-primary-color: var(--accent)-foreground !important;
+    --menuitem-hover-background-color: color-mix(
+        in srgb,
+        var(--accent) 17%,
+        transparent
+    ) !important;
+}
